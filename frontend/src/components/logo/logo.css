@@ -1,0 +1,42 @@
+.logo_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.logo {
+    margin: 0 10px;
+    width: 75px;
+    fill: #ffffff;
+}
+
+.title {
+    width: min-content;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    letter-spacing: .3rem;
+    color: white;
+}
+
+.title h1 {
+    font-size: 2rem;
+}
+
+.title h4 {
+    text-align: right;
+    color:rgb(128, 128, 128);
+}
+
+@media (max-width: 400px) {
+    .logo {
+        display: none;
+    }
+    .title h1 {
+        font-size: 1.5rem;
+    }
+    .title h4 {
+        display: none;
+    }
+
+}

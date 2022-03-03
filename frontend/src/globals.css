@@ -1,0 +1,61 @@
+/* IMPORT FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Space+Mono:wght@400;700&display=swap');
+
+/* RESET */
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  text-decoration: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+a img {
+  border: none;
+}
+
+textarea {
+  resize: none;
+}
+
+/* BASIC RULES */
+
+body {
+  margin: 0 auto;
+  max-width: 1400px;
+  background-color: black;
+  color: white;
+}
+
+p {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+}
+
+h3, h1 {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+}
+
+/* YOU CAN FIND THE COMPONENT'S STYLESHEETS IN EACH COMPONENT'S OWN DIRECTORY */

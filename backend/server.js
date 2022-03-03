@@ -8,16 +8,6 @@ const getData = require("./utils/getData")
 const saveData = require("./utils/saveData")
 const news = require("./utils/news")
 
-/* import 'dotenv/config'
-import express from 'express'
-import path from 'path'
-import morgan from 'morgan'
-import cors from 'cors'
-import { PrismaClient } from '@prisma/client'
-import getData from './utils/getData'
-import saveData from './utils/saveData'
-import news from './utils/news' */
-
 const prisma = new PrismaClient()
 const server = express()
 const port = 3005
@@ -46,7 +36,7 @@ async function getNews() {
 	}
 }
 getNews()   /* fetching news and saving to db at start time */
-setInterval(getNews, 3600000)   /* same as abowe, every hour */ 
+setInterval(getNews, 3600000)   /* same as above, every hour */ 
 
 server.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'frontend', 'build', 'index.html'))    /* serving static react frontend */

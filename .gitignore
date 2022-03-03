@@ -109,3 +109,6 @@ dist
 # database & migrations
 backend/prisma/dev.db
 backend/prisma/migrations
+
+# build
+frontend/build

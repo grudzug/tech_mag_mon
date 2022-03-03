@@ -1,0 +1,25 @@
+.about {
+    padding: 0 1rem;
+    max-width: 360px;
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:darkgray;
+    background-color: black;
+    z-index: 4;
+}
+
+.about p {
+    letter-spacing: 1px;
+}
+
+@media (max-width:700px) {
+    .about {
+        padding: 1rem;
+        position: absolute;
+        top: 60px;
+        max-width: 100%;
+        text-align: center;
+    }
+}
