@@ -31,7 +31,7 @@ async function getNews() {
     const data = await getData(apiUrl)    /* fetching news */
     const savedData = await saveData(data, prisma)    /* saving news to db */
 
-   } catch (error) {
+   } catch (error) {    /* catcing error */
 		console.log("Something went wrong.", error)
 	}
 }
@@ -51,7 +51,7 @@ server.get("/news", async (req, res) => {
     /* sending requested articles to client */
     res.json({ older: response.oldArticles, newer: response.freshArticles })
 
-  } catch (error) {
+  } catch (error) {   /* catcing error */
     console.log(error)
   }
 })
